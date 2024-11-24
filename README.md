@@ -6,7 +6,7 @@
 
 O intuito desse projeto é criar um aplicativo que possa ser utilizado para promover maior proteção e tranquilidade para os cidadãos.
 
-O desenvolvimento desse aplicativo foi feito na [Residência de Software](https://www.restic36.cepedi.org.br/) proposto pela [CEPEDI](https://www.cepedi.org.br/). O desafio em questão foi motivado pelos dados alarmantes sobre criminalidade em Feira de Santana, Bahia, destacad como uma das cidades mais violentas do País.
+O desenvolvimento desse aplicativo foi feito na [Residência de Software](https://www.restic36.cepedi.org.br/) proposto pela [CEPEDI](https://www.cepedi.org.br/). O desafio em questão foi motivado pelos dados alarmantes sobre criminalidade em Feira de Santana, Bahia, destacada como uma das cidades mais violentas do País.
 
 Os conceitos-chaves que nortearam o desenvolvimento do aplicativo incluem segurança pública, baseada em dados, prevenção colaborativa e o uso de tecnologias como ciência de dados, serviços em nuvem e desenvolvimento mobile.
 
@@ -18,11 +18,30 @@ Além disso, a aplicação será capaz de receber denúncias de crimes e acident
 
 ## Tecnologias
 
-Inicialmente, o aplicativo foi desenvolvido utilizando as seguintes tecnologias:
+O aplicativo foi desenvolvido utilizando as seguintes tecnologias:
 
-- [React + Next.js](https://nextjs.org/)
-- [PostgreSQL](https://www.postgresql.org/)
-- [Node.js](https://nodejs.org/en/)
+<ul>
+    <li>
+        <a href="https://nextjs.org/">
+             React <img src="assets/react.png" alt="React" width="15" style="vertical-align: middle;"> + Next.js <img src="assets/nextjs.png" alt="Next.js" width="15" style="vertical-align: middle;">
+        </a>
+    </li>
+    <li>
+        <a href="https://www.postgresql.org/">
+            PostgreSQL <img src="assets/postgresql.png" alt="PostgreSQL" width="15" style="vertical-align: middle;">
+        </a>
+    </li>
+    <li>
+        <a href="https://www.prisma.io/">
+            Prisma <img src="assets/prisma.png" alt="Prisma" width="15" style="vertical-align: middle;">
+        </a>
+    </li>
+    <li>
+        <a href="https://nodejs.org/en/">
+            Node.js <img src="assets/nodejs.png" alt="Node.js" width="15" style="vertical-align: middle;">
+        </a>
+    </li>
+</ul>
 
 ## Instalação
 
@@ -34,14 +53,23 @@ Para instalar o aplicativo, siga os passos abaixo:
 git clone
 ```
 
-2. Instale as dependências:
-
+2. Instale as dependências em ambas as pastas `server` e `web`:
 ```bash
+cd server
+npm install
+cd ../web
 npm install
 ```
+obs: siga as instruções no README de cada subpasta.
 
-3. Inicie o aplicativo:
-
+3. Inicie o servidor:
 ```bash
+cd server
+npm run dev
+```
+
+4. Inicie o aplicativo:
+```bash
+cd web
 npm run dev
 ```
