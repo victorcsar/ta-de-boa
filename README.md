@@ -10,6 +10,11 @@ O desenvolvimento desse aplicativo foi feito na [Residência de Software](https:
 
 Os conceitos-chaves que nortearam o desenvolvimento do aplicativo incluem segurança pública, baseada em dados, prevenção colaborativa e o uso de tecnologias como ciência de dados, serviços em nuvem e desenvolvimento mobile.
 
+## Arquitetura
+<p align="center">
+    <img src="assets/arch-background.jpeg" alt="Logotipo do projeto" width="300">
+</p>
+
 ## Desenvolvimento
 
 O desenvolvimento do "Tá de Boa" começou com a definição de funcionalidades e requisitos do aplicativo. A cidade de Feira de Santana foi escolhida como foco do projeto, e a partir disso, permitindo o uso de Algortimos de ciência de dados para prever locais de maior risco de criminalidade. 
