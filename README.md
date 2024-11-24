@@ -15,6 +15,16 @@ Os conceitos-chaves que nortearam o desenvolvimento do aplicativo incluem segura
     <img src="assets/Arch-Ta-de-Boa-sem-background.png" alt="Logotipo do projeto" width="1000">
 </p>
 
+O **frontend**, desenvolvido com **React** e **Next.js**, oferece uma interface responsiva para capturar dados como denúncias e consultas, sendo hospedado no **AWS S3** com distribuição via **CloudFront** para otimizar a entrega de conteúdo.
+
+No **backend**, construído com **Node.js** e **Prisma**, as requisições REST/GraphQL são processadas, conectando-se ao banco de dados **PostgreSQL** para armazenar informações transacionais e ao **Redis** para cache de dados frequentes. O backend é implantado em instâncias **EC2** configuradas com auto scaling para suportar aumentos de carga.
+
+Os dados transacionais são armazenados em um banco **PostgreSQL** gerenciado pelo **Amazon RDS**, que garante backups automáticos e alta disponibilidade. Arquivos enviados pelos usuários, como fotos e vídeos, são armazenados no **Amazon S3**, enquanto **Redis** é utilizado para melhorar o desempenho e gerenciar sessões de usuários, quando necessário.
+
+A funcionalidade de previsão de crimes é realizada por algoritmos de ciência de dados executados periodicamente em **Lambda Functions**, garantindo processamento eficiente e escalável. Logs de aplicação, métricas de desempenho e alertas críticos são monitorados pelo **AWS CloudWatch**, assegurando a saúde do sistema.
+
+Com esse fluxo, o **frontend** interage diretamente com o **backend**, que consulta o banco de dados, cache ou processa dados preditivos para atender as solicitações, garantindo uma experiência otimizada e confiável para os usuários.
+
 ## Desenvolvimento
 
 O desenvolvimento do "Tá de Boa" começou com a definição de funcionalidades e requisitos do aplicativo. A cidade de Feira de Santana foi escolhida como foco do projeto, e a partir disso, permitindo o uso de Algortimos de ciência de dados para prever locais de maior risco de criminalidade. 
