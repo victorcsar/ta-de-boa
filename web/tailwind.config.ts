@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: 'var(--font-inter-local)'
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
