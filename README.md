@@ -12,7 +12,7 @@ Os conceitos-chaves que nortearam o desenvolvimento do aplicativo incluem segura
 
 ## Arquitetura
 <p align="center">
-    <img src="assets/arch-background.jpeg" alt="Logotipo do projeto" width="300">
+    <img src="assets/Arch-Ta-de-Boa-sem-background.png" alt="Logotipo do projeto" width="1000">
 </p>
 
 ## Desenvolvimento
