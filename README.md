@@ -12,14 +12,16 @@ Os conceitos-chaves que nortearam o desenvolvimento do aplicativo incluem segura
 
 ## Desenvolvimento
 
-O desenvolvimento do "Tá de Boa" começou com a definição de funcionalidades e requisitos do aplicativo. A cidade de Feira de Santana foi escolhida como foco do projeto, e a partir disso, permitindo o uso de Algortimos de ciência de dados para prever locais de maior risco de criminalidade. Além disso, a aplicação será capaz de receber denúncias de crimes e acidentes. Os registros incluirão detalhes como localização, tipo de crime, detalhes sobre o ocorrido, uso de armas de fogo, entre outros.
+O desenvolvimento do "Tá de Boa" começou com a definição de funcionalidades e requisitos do aplicativo. A cidade de Feira de Santana foi escolhida como foco do projeto, e a partir disso, permitindo o uso de Algortimos de ciência de dados para prever locais de maior risco de criminalidade. 
+
+Além disso, a aplicação será capaz de receber denúncias de crimes e acidentes. Os registros incluirão detalhes como localização, tipo de crime, detalhes sobre o ocorrido, uso de armas de fogo, entre outros.
 
 ## Tecnologias
 
 Inicialmente, o aplicativo foi desenvolvido utilizando as seguintes tecnologias:
 
-- [React](https://reactjs.org/)
-- [MongoDB](https://www.mongodb.com/)
+- [React + Next.js](https://nextjs.org/)
+- [PostgreSQL](https://www.postgresql.org/)
 - [Node.js](https://nodejs.org/en/)
 
 ## Instalação
@@ -41,5 +43,5 @@ npm install
 3. Inicie o aplicativo:
 
 ```bash
-npm start
+npm run dev
 ```
