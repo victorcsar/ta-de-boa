@@ -23,21 +23,21 @@ O aplicativo foi desenvolvido utilizando as seguintes tecnologias:
 <ul>
     <li>
         <a href="https://reactjs.org/">React</a> 
-        <img src="assets/react.png" alt="React" class="tech-icon"> + 
+        <img src="assets/react.png" alt="React" style="width: 15px; vertical-align: middle;"> + 
         <a href="https://nextjs.org/">Next.js</a>
-        <img src="assets/nextjs.png" alt="Next.js" class="tech-icon">
+        <img src="assets/nextjs.png" alt="Next.js" style="width: 15px; vertical-align: middle;">
     </li>
     <li>
         <a href="https://www.postgresql.org/">PostgreSQL</a>
-        <img src="assets/postgresql.png" alt="PostgreSQL" class="tech-icon">
+        <img src="assets/postgresql.png" alt="PostgreSQL" style="width: 15px; vertical-align: middle;">
     </li>
     <li>
         <a href="https://www.prisma.io/">Prisma</a>
-        <img src="assets/prisma.png" alt="Prisma" class="tech-icon">
+        <img src="assets/prisma.png" alt="Prisma" style="width: 15px; vertical-align: middle;">
     </li>
     <li>
         <a href="https://nodejs.org/en/">Node.js</a>
-        <img src="assets/nodejs.png" alt="Node.js" class="tech-icon">
+        <img src="assets/nodejs.png" alt="Node.js" style="width: 15px; vertical-align: middle;">
     </li>
 </ul>
 
@@ -72,9 +72,4 @@ cd web
 npm run dev
 ```
 
-<style>
-.tech-icon {
-    width: 15px;
-    vertical-align: middle;
-}
-</style>
+
