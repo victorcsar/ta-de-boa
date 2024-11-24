@@ -22,24 +22,22 @@ O aplicativo foi desenvolvido utilizando as seguintes tecnologias:
 
 <ul>
     <li>
-        <a href="https://nextjs.org/">
-             React <img src="assets/react.png" alt="React" width="15" style="vertical-align: middle;"> + Next.js <img src="assets/nextjs.png" alt="Next.js" width="15" style="vertical-align: middle;">
-        </a>
+        <a href="https://reactjs.org/">React</a> 
+        <img src="assets/react.png" alt="React" class="tech-icon"> + 
+        <a href="https://nextjs.org/">Next.js</a>
+        <img src="assets/nextjs.png" alt="Next.js" class="tech-icon">
     </li>
     <li>
-        <a href="https://www.postgresql.org/">
-            PostgreSQL <img src="assets/postgresql.png" alt="PostgreSQL" width="15" style="vertical-align: middle;">
-        </a>
+        <a href="https://www.postgresql.org/">PostgreSQL</a>
+        <img src="assets/postgresql.png" alt="PostgreSQL" class="tech-icon">
     </li>
     <li>
-        <a href="https://www.prisma.io/">
-            Prisma <img src="assets/prisma.png" alt="Prisma" width="15" style="vertical-align: middle;">
-        </a>
+        <a href="https://www.prisma.io/">Prisma</a>
+        <img src="assets/prisma.png" alt="Prisma" class="tech-icon">
     </li>
     <li>
-        <a href="https://nodejs.org/en/">
-            Node.js <img src="assets/nodejs.png" alt="Node.js" width="15" style="vertical-align: middle;">
-        </a>
+        <a href="https://nodejs.org/en/">Node.js</a>
+        <img src="assets/nodejs.png" alt="Node.js" class="tech-icon">
     </li>
 </ul>
 
@@ -73,3 +71,10 @@ npm run dev
 cd web
 npm run dev
 ```
+
+<style>
+.tech-icon {
+    width: 15px;
+    vertical-align: middle;
+}
+</style>
