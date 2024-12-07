@@ -1,23 +1,23 @@
 "use client"
 import { MapPin } from "@/components/allsvgused";
-import { APIProvider, Map, AdvancedMarker, Pin  } from "@vis.gl/react-google-maps"
+import MapsAndPins from "@/components/google_features/markersandpins";
+import { APIProvider, Map } from "@vis.gl/react-google-maps"
 
 const key = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ""
 
 
 export default function Home() {
-
   return (
     <div className="flex flex-col w-full h-screen mb-9">
 
       <div className="fixed w-full z-20 flex top-16">
 
         <div className="relative w-full mx-4  rounded-2xl py-3 flex justify-center items-center">
-          <div className="border border-red-500 border-solid flex h-full pl-4 bg-white">
+          <div className="border border-red-500 border-solid flex h-full w-full pl-4 bg-white">
             <label htmlFor="search-region" className="flex h-full items-center ">
               <MapPin/>
             </label>
-            <input id="search-region" className="border-none focus:border-none" placeholder="Buscar região"></input>
+            <input id="search-region" className="border-none focus:border-none w-full" placeholder="Buscar região"></input>
           </div>
 
         </div>
@@ -33,13 +33,13 @@ export default function Home() {
         disableDefaultUI={true}
         mapId={`421ca848a160d26b`}
         >
-          <AdvancedMarker key={`teste`} position={{lat: -12.2583, lng: -38.9606}} onClick={(e) => {console.log(e)}}>
-            <Pin />
-          </AdvancedMarker>
+          <MapsAndPins />
 
         </Map>
 
       </APIProvider>
+
+
     </div>
   );
 }
