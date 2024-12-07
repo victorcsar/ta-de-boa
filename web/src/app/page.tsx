@@ -1,6 +1,6 @@
 "use client"
 import { MapPin } from "@/components/allsvgused";
-import { APIProvider, Map,  } from "@vis.gl/react-google-maps"
+import { APIProvider, Map, AdvancedMarker, Pin  } from "@vis.gl/react-google-maps"
 
 const key = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ""
 
@@ -31,7 +31,13 @@ export default function Home() {
         defaultZoom={13}
         gestureHandling={'greedy'}
         disableDefaultUI={true}
-        />
+        mapId={`421ca848a160d26b`}
+        >
+          <AdvancedMarker key={`teste`} position={{lat: -12.2583, lng: -38.9606}} onClick={(e) => {console.log(e)}}>
+            <Pin />
+          </AdvancedMarker>
+
+        </Map>
 
       </APIProvider>
     </div>
