@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import userSvg from '@/assets/brands/user-register.svg'
 import Image from 'next/image';
+import DialogAlert from "@/components/dialog-alert";
 
 
 interface FormData {
@@ -52,7 +53,7 @@ export default function Home() {
   }
 
   return (
-    <div className="flex flex-col w-full h-screen mb-9">
+    <div className="flex flex-col w-full h-screen pb-40">
       <HeaderBrand />
       <p className="px-4 mb-3 uppercase text-custom-primary font-bold">Cadastrar</p>
       <form className="flex flex-col gap-[1.875rem] justify-center items-center">
@@ -150,6 +151,7 @@ export default function Home() {
           )}
 
       </form>
+      <DialogAlert />
     </div>
   );
 }

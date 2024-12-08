@@ -1,4 +1,5 @@
 "use client"
+import DialogAlert from "@/components/dialog-alert";
 import HeaderBrand from "@/components/header-brand";
 import InputCustom from "@/components/input-custom";
 import Link from "next/link";
@@ -34,7 +35,7 @@ export default function Login() {
   }
 
   return (
-    <div className="flex flex-col w-full h-screen mb-9">
+    <div className="flex flex-col w-full h-screen pb-40">
       <HeaderBrand />
       <p className="px-4 mb-3 uppercase text-custom-primary font-bold">Login</p>
       <form className="flex flex-col gap-[1.875rem] justify-center items-center">
@@ -59,6 +60,8 @@ export default function Login() {
         <button onClick={handleSubmit} type="button" className="bg-custom-primary text-white uppercase px-20 py-4 w-max rounded-2xl font-bold">Entrar</button>
         <Link href="/register" className="text-custom-primary">Não tem uma conta? Cadastre-se</Link>
       </form>
+
+      <DialogAlert />
     </div>
   );
 }
