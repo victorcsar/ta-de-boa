@@ -2,7 +2,6 @@ import { MapPin } from "@/components/allsvgused"
 import FloatingMenu from "@/components/floating-menu"
 import GoogleMap from "@/components/google_features/map"
 import MapsAndPins from "@/components/google_features/markersandpins"
-import ResolutionModal from "@/components/resolutionmodal"
 import { mapPinsFixed } from "@/lib/staticroutes"
 
 export default function Home() {
@@ -29,9 +28,6 @@ export default function Home() {
                 <MapsAndPins data={data} />
             </GoogleMap>
             <FloatingMenu />
-
-
-            {/* <ResolutionModal/> */}
 
         </div>
 

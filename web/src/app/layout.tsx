@@ -4,7 +4,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 import ResolutionModal from "@/components/resolutionmodal";
 
-export const interLocal = localFont({ 
+const interLocal = localFont({ 
   src: "../assets/fonts/Inter-Regular.ttf",
   variable: '--font-inter-local'
 })
