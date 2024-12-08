@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import FloatingMenu from "@/components/floating-menu";
 import { Providers } from "./providers";
 
-const interLocal = localFont({ 
+export const interLocal = localFont({ 
   src: "../assets/fonts/Inter-Regular.ttf",
   variable: '--font-inter-local'
 })
@@ -23,12 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${interLocal.variable} font-sans`}
+        className={`${interLocal.variable} font-sans  lg:bg-custom-primary lg:flex lg:flex-col lg:items-center`}
       >
         <Providers>
           {children}
         </Providers>
-        <FloatingMenu />
       </body>
     </html>
   );

@@ -1,34 +1,21 @@
-import { MapPin } from "@/components/allsvgused";
-import GoogleMap from "@/components/google_features/map";
-import MapsAndPins from "@/components/google_features/markersandpins";
-import { mapPinsFixed } from "@/lib/staticroutes"
-
-// const key = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ""
+import Link from "next/link";
+import Image from "next/image";
+import brandTaDeBoa from '@/assets/brands/initial-brand.svg'
 
 
-export default function Home() {
-  const data = mapPinsFixed
+export default function DefaultPage() {
   return (
-    <div className="flex flex-col w-full h-screen mb-9">
+    <div className="flex flex-col h-screen justify-center gap-32 lg:bg-white lg:w-[21.875rem]">
 
-      <div className="fixed w-full z-20 flex top-16">
-
-        <div className="relative w-full mx-4  rounded-2xl py-3 flex justify-center items-center">
-          <div className="border border-red-500 border-solid flex h-full w-full pl-4 bg-white">
-            <label htmlFor="search-region" className="flex h-full items-center ">
-              <MapPin/>
-            </label>
-            <input id="search-region" className="border-none focus:border-none w-full" placeholder="Buscar região"></input>
-          </div>
-
+        <div className="flex justify-center">
+            <Image src={brandTaDeBoa} width={241} height={64} alt="Tá de boa"></Image>
         </div>
 
-      </div>
-
-      <GoogleMap>
-        <MapsAndPins data={data} />
-      </GoogleMap>
-
+        <div className="flex flex-col gap-3 w-full px-5">
+          <Link href="/login"    className="w-full py-2 bg-custom-primary text-center rounded-xl text-white">Login</Link>
+          <Link href="/register" className="w-full py-2 bg-custom-primary text-center rounded-xl text-white" >Registre-se</Link>
+          <Link href="/home"     className="w-full py-2 bg-custom-secondary text-center rounded-xl text-white">CONTINUAR SEM USUARIO</Link> 
+        </div>
     </div>
   );
 }

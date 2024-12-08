@@ -1,9 +1,10 @@
 import CustomButton from "@/components/button-custom";
+import FloatingMenu from "@/components/floating-menu";
 import { UserCircleIcon } from "lucide-react";
 
 export default function Settings() {
   return (
-    <div className="flex flex-col items-center h-full">
+    <div className="flex flex-col items-center h-full pb-9 lg:bg-white lg:w-[21.875rem]">
       <h2 className="text-custom-primary text-2xl font-bold pt-20 pb-10">
         CONFIGURAÇÃO
       </h2>
@@ -16,6 +17,7 @@ export default function Settings() {
         <CustomButton label="Editar conta" color="bg-custom-primary" />
         <CustomButton label="Logout" color="bg-red-600" />
       </div>
+      <FloatingMenu />
     </div>
   );
 }
