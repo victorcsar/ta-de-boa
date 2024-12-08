@@ -5,7 +5,7 @@ import brandTaDeBoa from '@/assets/brands/initial-brand.svg'
 
 export default function DefaultPage() {
   return (
-    <div className="flex flex-col h-screen justify-center gap-32 lg:bg-white lg:w-[21.875rem]">
+    <div className="flex flex-col h-screen justify-center gap-32">
 
         <div className="flex justify-center">
             <Image src={brandTaDeBoa} width={241} height={64} alt="Tá de boa"></Image>

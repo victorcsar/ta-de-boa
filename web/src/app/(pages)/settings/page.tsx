@@ -4,7 +4,7 @@ import { UserCircleIcon } from "lucide-react";
 
 export default function Settings() {
   return (
-    <div className="flex flex-col items-center h-full pb-9 lg:bg-white lg:w-[21.875rem]">
+    <div className="flex flex-col items-center h-full pb-9">
       <h2 className="text-custom-primary text-2xl font-bold pt-20 pb-10">
         CONFIGURAÇÃO
       </h2>

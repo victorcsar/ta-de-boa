@@ -35,7 +35,7 @@ export default function Login() {
   }
 
   return (
-    <div className="flex flex-col w-full h-screen pb-40 lg:bg-white lg:w-[21.875rem]">
+    <div className="flex flex-col w-full h-screen pb-40">
       <HeaderBrand />
       <p className="px-4 mb-3 uppercase text-custom-primary font-bold">Login</p>
       <form className="flex flex-col gap-[1.875rem] justify-center items-center">

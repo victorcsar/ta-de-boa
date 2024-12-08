@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${interLocal.variable} font-sans  lg:bg-custom-primary lg:flex lg:flex-col lg:items-center`}
+        className={`${interLocal.variable} font-sans`}
       >
         <Providers>
           {children}
