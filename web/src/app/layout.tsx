@@ -12,7 +12,7 @@ const interLocal = localFont({
 
 export const metadata: Metadata = {
   title: "Tá de boa?",
-  description: "Hackathon project by team 96",
+  description: "Hackathon project by team 94",
 };
 
 export default function RootLayout({
