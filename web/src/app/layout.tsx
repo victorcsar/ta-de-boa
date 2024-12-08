@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Providers } from "./providers";
+import ResolutionModal from "@/components/resolutionmodal";
 
 export const interLocal = localFont({ 
   src: "../assets/fonts/Inter-Regular.ttf",
@@ -27,6 +28,7 @@ export default function RootLayout({
         <Providers>
           {children}
         </Providers>
+        <ResolutionModal/>
       </body>
     </html>
   );
