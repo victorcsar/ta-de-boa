@@ -8,7 +8,6 @@ export default function GoogleMap({children}: PropsWithChildren){
     return (
         <APIProvider apiKey={key}>
             <Map
-            style={{width: '100vw', height: '100vh'}}
             defaultCenter={{lat: -12.2583, lng: -38.9606}}
             defaultZoom={13}
             gestureHandling={'greedy'}
