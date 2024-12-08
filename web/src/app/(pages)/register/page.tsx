@@ -95,8 +95,9 @@ export default function Home() {
 
                 <div className="bg-fade rounded-full p-[.0625rem]">
 
-                  <div className="px-[3.5625rem] py-[3.6875rem] bg-gray-100 rounded-full border-none outline-none">
+                  <div className="py-[3.5625rem] px-[3.6875rem] bg-gray-100 rounded-full border-none outline-none">
                     <Image src={userSvg} width={32} height={36} alt="User Icon" />
+                    
                   </div>
                 </div>
                 <p className="font-bold text-custom-primary">adicionar foto</p>
