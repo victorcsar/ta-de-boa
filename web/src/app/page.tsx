@@ -1,12 +1,13 @@
-"use client"
 import { MapPin } from "@/components/allsvgused";
+import GoogleMap from "@/components/google_features/map";
 import MapsAndPins from "@/components/google_features/markersandpins";
-import { APIProvider, Map } from "@vis.gl/react-google-maps"
+import { mapPinsFixed } from "@/lib/staticroutes"
 
-const key = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ""
+// const key = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ""
 
 
 export default function Home() {
+  const data = mapPinsFixed
   return (
     <div className="flex flex-col w-full h-screen mb-9">
 
@@ -24,21 +25,9 @@ export default function Home() {
 
       </div>
 
-      <APIProvider apiKey={key} >
-        <Map
-        style={{width: '100vw', height: '100vh'}}
-        defaultCenter={{lat: -12.2583, lng: -38.9606}}
-        defaultZoom={13}
-        gestureHandling={'greedy'}
-        disableDefaultUI={true}
-        mapId={`421ca848a160d26b`}
-        >
-          <MapsAndPins />
-
-        </Map>
-
-      </APIProvider>
-
+      <GoogleMap>
+        <MapsAndPins data={data} />
+      </GoogleMap>
 
     </div>
   );
