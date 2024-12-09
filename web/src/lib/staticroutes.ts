@@ -7,33 +7,33 @@ export interface StaticRoutes {
     position: StaticRoutesPosition
 }
 
-
-
 export const mapPinsFixed: StaticRoutes[] = [
-    {
-        key: "Small burned",
+    // Small burned (45 pontos)
+    ...Array.from({ length: 60 }, (_, i) => ({
+        key: `Small burned ${i + 1}`,
         position: {
-            lat: -12.239471771876524,
-            lng: -38.959500032648165
+            lat: -12.2395 + Math.random() * 0.006 - 0.003, // Latitude variada em ±0.003
+            lng: -38.9595 + Math.random() * 0.004 - 0.002 // Longitude variada em ±0.002
         }
-    },
-    {
-        key: "White Wings",
+    })),
+    // White Wings (75 pontos)
+    ...Array.from({ length: 75 }, (_, i) => ({
+        key: `White Wings ${i + 1}`,
         position: {
-            lat: -12.204621352445871,
-            lng:  -38.99964368938422
+            lat: -12.2046 + Math.random() * 0.006 - 0.003, // Latitude variada em ±0.003
+            lng: -38.9992 + Math.random() * 0.006 - 0.002 // Longitude variada em ±0.002
         }
+    })),
+    // Clean field (15 pontos)
+    ...Array.from({ length: 40 }, (_, i) => ({
+        key: `Clean field ${i + 1}`,
+        position: {
+            lat: -12.2157 + Math.random() * 0.008 - 0.004, // Latitude variada em ±0.004
+            lng: -38.9747 + Math.random() * 0.005 - 0.0025 // Longitude variada em ±0.0025
+        }
+    }))
+];
 
-    },
-    {
-        key: "Clean field",
-        position: {
-            lat: -12.215731670436238,
-            lng: -38.97471795481743
-        }
-
-    }
-]
 
 
 export const policeStation: StaticRoutes[] = [
