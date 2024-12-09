@@ -36,11 +36,8 @@ export default function Heatmap(props: PinsProps) {
     position: [point?.position?.lng, point?.position?.lat]
   }));
 
-  console.log(dataHeatMap);
-
   const googleMapsApiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || "";
 
-  // Configuração dos layers do deck.gl
   const layers = useMemo(() => {
     return [
       new HeatmapLayer({
