@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import FloatingMenu from "@/components/floating-menu";
 import { Providers } from "./providers";
+import ResolutionModal from "@/components/resolutionmodal";
 
 const interLocal = localFont({ 
   src: "../assets/fonts/Inter-Regular.ttf",
@@ -12,7 +12,7 @@ const interLocal = localFont({
 
 export const metadata: Metadata = {
   title: "Tá de boa?",
-  description: "Hackathon project by team 96",
+  description: "Hackathon project by team 94",
 };
 
 export default function RootLayout({
@@ -28,7 +28,7 @@ export default function RootLayout({
         <Providers>
           {children}
         </Providers>
-        <FloatingMenu />
+        <ResolutionModal/>
       </body>
     </html>
   );

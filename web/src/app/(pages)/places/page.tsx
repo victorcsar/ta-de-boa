@@ -1,3 +1,4 @@
+import FloatingMenu from "@/components/floating-menu";
 import GoogleMap from "@/components/google_features/map";
 import MapsAndPins from "@/components/google_features/markersandpins";
 import { policeStation } from "@/lib/staticroutes";
@@ -9,7 +10,7 @@ export default function Place() {
           <GoogleMap>
             <MapsAndPins data={data} />
           </GoogleMap>
-    
+          <FloatingMenu />
         </div>
       );
 }

@@ -56,6 +56,19 @@ O aplicativo foi desenvolvido utilizando as seguintes tecnologias:
     </li>
 </ul>
 
+## ⚠️ Aviso: Modo de Tela de Dispositivos Móveis ⚠️
+
+Este projeto foi desenvolvido para ser utilizado como um aplicativo em dispositivos móveis. Ao testar a aplicação no navegador, é fundamental habilitar o modo de tela de dispositivos móveis no DevTools para simular a experiência adequada.
+
+### Como habilitar o modo de tela de dispositivos móveis no navegador:
+
+1. Abra o navegador (preferencialmente Google Chrome ou Edge).
+2. Pressione `F12` ou clique com o botão direito em qualquer lugar da página e selecione **Inspecionar**.
+3. No DevTools, clique no ícone de dispositivos móveis (um smartphone e tablet) ou pressione `Ctrl + Shift + M` (Windows) / `Cmd + Shift + M` (Mac).
+4. Escolha um dispositivo no menu suspenso ou ajuste manualmente a resolução para simular um smartphone.
+
+Certifique-se de atualizar a página após ativar o modo para garantir o carregamento correto da interface responsiva.
+
 ## Instalação
 
 Para instalar o aplicativo, siga os passos abaixo:
