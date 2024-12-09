@@ -8,28 +8,25 @@ export interface StaticRoutes {
 }
 
 export const mapPinsFixed: StaticRoutes[] = [
-    // Small burned (45 pontos)
     ...Array.from({ length: 60 }, (_, i) => ({
         key: `Small burned ${i + 1}`,
         position: {
-            lat: -12.2395 + Math.random() * 0.006 - 0.003, // Latitude variada em ±0.003
-            lng: -38.9595 + Math.random() * 0.004 - 0.002 // Longitude variada em ±0.002
+            lat: -12.2395 + Math.random() * 0.006 - 0.003,
+            lng: -38.9595 + Math.random() * 0.004 - 0.002 
         }
     })),
-    // White Wings (75 pontos)
     ...Array.from({ length: 75 }, (_, i) => ({
         key: `White Wings ${i + 1}`,
         position: {
-            lat: -12.2046 + Math.random() * 0.006 - 0.003, // Latitude variada em ±0.003
-            lng: -38.9992 + Math.random() * 0.006 - 0.002 // Longitude variada em ±0.002
+            lat: -12.2046 + Math.random() * 0.006 - 0.003,
+            lng: -38.9992 + Math.random() * 0.006 - 0.002 
         }
     })),
-    // Clean field (15 pontos)
     ...Array.from({ length: 40 }, (_, i) => ({
         key: `Clean field ${i + 1}`,
         position: {
-            lat: -12.2157 + Math.random() * 0.008 - 0.004, // Latitude variada em ±0.004
-            lng: -38.9747 + Math.random() * 0.005 - 0.0025 // Longitude variada em ±0.0025
+            lat: -12.2157 + Math.random() * 0.008 - 0.004, 
+            lng: -38.9747 + Math.random() * 0.005 - 0.0025 
         }
     }))
 ];
