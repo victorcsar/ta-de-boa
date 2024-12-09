@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useMemo, useEffect, useState, useRef } from "react";
+import React, { useMemo, useEffect} from "react";
 import { APIProvider, Map, useMap,  } from "@vis.gl/react-google-maps";
 import { DeckProps } from "@deck.gl/core";
 import {HeatmapLayer} from '@deck.gl/aggregation-layers';
@@ -32,7 +32,7 @@ function DeckGLOverlay(props: DeckProps) {
 
 export default function Heatmap(props: PinsProps) {
   const mapPinsFixed = props.data
-  let dataHeatMap = mapPinsFixed.map((point) => ({
+  const dataHeatMap = mapPinsFixed.map((point) => ({
     position: [point?.position?.lng, point?.position?.lat]
   }));
 

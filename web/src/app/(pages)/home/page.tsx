@@ -1,8 +1,6 @@
 import { MapPin } from "@/components/allsvgused"
 import FloatingMenu from "@/components/floating-menu"
 import Heatmap from "@/components/google_features/heatmap"
-import GoogleMap from "@/components/google_features/map"
-import MapsAndPins from "@/components/google_features/markersandpins"
 import { mapPinsFixed } from "@/lib/staticroutes"
 
 export default function Home() {
