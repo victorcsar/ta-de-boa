@@ -10,8 +10,12 @@
   },
   "dependencies": {
     "@chakra-ui/react": "^3.2.3",
+    "@deck.gl/aggregation-layers": "^9.0.37",
+    "@deck.gl/core": "^9.0.37",
+    "@deck.gl/google-maps": "^9.0.37",
     "@emotion/react": "^11.13.5",
     "@emotion/styled": "^11.13.5",
+    "@react-google-maps/api": "^2.20.3",
     "@vis.gl/react-google-maps": "^1.4.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
